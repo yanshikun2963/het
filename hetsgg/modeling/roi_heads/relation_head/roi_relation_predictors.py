@@ -428,8 +428,8 @@ class PrototypeEmbeddingNetwork(nn.Module):
             # sem_sub = self.vis2sem(sub_rep[pair_idx[:, 0]])  # h(xs)
             # sem_obj = self.vis2sem(obj_rep[pair_idx[:, 1]])  # h(xo)
 
-            sem_sub = self.vis2sem(sub_vis)  # h(xs)
-            sem_obj = self.vis2sem(obj_vis)  # h(xo)
+            sem_sub = self.vis2sem2(sub_vis)  # h(xs)
+            sem_obj = self.vis2sem2(obj_vis)  # h(xo)
             
             gate_sem_sub = torch.sigmoid(self.gate_sub(cat((s_embed, sem_sub), dim=-1)))  # gs
             gate_sem_obj = torch.sigmoid(self.gate_obj(cat((o_embed, sem_obj), dim=-1)))  # go
