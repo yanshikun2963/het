@@ -1,0 +1,25 @@
+# ninja log v5
+6	19864	1736755091390297430	/root/het/build/temp.linux-x86_64-3.8/root/het/hetsgg/csrc/cuda/deform_pool_kernel_cuda.o	e253a6e34cbe2a54
+4	20624	1736755092150288051	/root/het/build/temp.linux-x86_64-3.8/root/het/hetsgg/csrc/cuda/deform_conv_kernel_cuda.o	5710c9dee4c662cc
+1	29354	1736755100850180764	/root/het/build/temp.linux-x86_64-3.8/root/het/hetsgg/csrc/cpu/ROIAlign_cpu.o	a6fcbb7a4ad26582
+2	29414	1736755100914179975	/root/het/build/temp.linux-x86_64-3.8/root/het/hetsgg/csrc/cpu/nms_cpu.o	c14c8645e83fe8cc
+1	33928	1736755105422124437	/root/het/build/temp.linux-x86_64-3.8/root/het/hetsgg/csrc/vision.o	cd097fd79b59d898
+31	19014	1736755174257280602	/root/het/build/temp.linux-x86_64-3.8/root/het/hetsgg/csrc/cuda/deform_pool_cuda.o	853c9c9ff5aac863
+32	19721	1736755174961272010	/root/het/build/temp.linux-x86_64-3.8/root/het/hetsgg/csrc/cuda/deform_pool_kernel_cuda.o	e253a6e34cbe2a54
+30	19765	1736755175001271522	/root/het/build/temp.linux-x86_64-3.8/root/het/hetsgg/csrc/cuda/SigmoidFocalLoss_cuda.o	5a2325e35c7a245
+28	19917	1736755175157269619	/root/het/build/temp.linux-x86_64-3.8/root/het/hetsgg/csrc/cuda/ROIAlign_cuda.o	957fd53de38adb76
+30	19969	1736755175209268984	/root/het/build/temp.linux-x86_64-3.8/root/het/hetsgg/csrc/cuda/deform_conv_cuda.o	4c243412d702e261
+33	20121	1736755175357267179	/root/het/build/temp.linux-x86_64-3.8/root/het/hetsgg/csrc/cuda/nms.o	fa6f355523c9348d
+29	20175	1736755175413266495	/root/het/build/temp.linux-x86_64-3.8/root/het/hetsgg/csrc/cuda/ROIPool_cuda.o	e551dc8ace03ac4d
+31	21061	1736755176297255710	/root/het/build/temp.linux-x86_64-3.8/root/het/hetsgg/csrc/cuda/deform_conv_kernel_cuda.o	5710c9dee4c662cc
+25	19394	1736755197101002215	/root/het/build/temp.linux-x86_64-3.8/root/het/hetsgg/csrc/cuda/deform_pool_cuda.o	71f2ae4d7a6f0a75
+24	20113	1736755197820993453	/root/het/build/temp.linux-x86_64-3.8/root/het/hetsgg/csrc/cuda/deform_conv_cuda.o	c03b00f673090e88
+23	20233	1736755197940991993	/root/het/build/temp.linux-x86_64-3.8/root/het/hetsgg/csrc/cuda/ROIAlign_cuda.o	ecc422ff94567f60
+25	20462	1736755198168989219	/root/het/build/temp.linux-x86_64-3.8/root/het/hetsgg/csrc/cuda/deform_pool_kernel_cuda.o	5ad5107b518fa878
+24	20522	1736755198224988537	/root/het/build/temp.linux-x86_64-3.8/root/het/hetsgg/csrc/cuda/ROIPool_cuda.o	442a1c2c92f5d163
+24	20544	1736755198248988245	/root/het/build/temp.linux-x86_64-3.8/root/het/hetsgg/csrc/cuda/SigmoidFocalLoss_cuda.o	1394eccf23af2b75
+25	20796	1736755198500985179	/root/het/build/temp.linux-x86_64-3.8/root/het/hetsgg/csrc/cuda/deform_conv_kernel_cuda.o	d2b8fce3a3a01982
+26	21621	1736755199328975105	/root/het/build/temp.linux-x86_64-3.8/root/het/hetsgg/csrc/cuda/nms.o	817d28b7da32254e
+23	29254	1736755206932882634	/root/het/build/temp.linux-x86_64-3.8/root/het/hetsgg/csrc/cpu/ROIAlign_cpu.o	f6941f59f3bd22c8
+23	29265	1736755206944882489	/root/het/build/temp.linux-x86_64-3.8/root/het/hetsgg/csrc/cpu/nms_cpu.o	3c416c95e5443d24
+22	34575	1736755212254691273	/root/het/build/temp.linux-x86_64-3.8/root/het/hetsgg/csrc/vision.o	e93cdf3a940819c4
