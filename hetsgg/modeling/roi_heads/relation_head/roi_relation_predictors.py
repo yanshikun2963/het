@@ -31,9 +31,9 @@ import h5py
 from .utils_relation import nms_overlaps
 from .BalancedMoERouter import RobustMoERouter, UniformMoERouter3_,UniformMoERouter3
 
-from transformers import LxmertTokenizer, LxmertForPreTraining
+from transformers import BertTokenizer
 import json
-from .PromptLxMert import GlobalPromptLxmert
+from .PromptUNITER import GlobalPromptUNITER
 
 @registry.ROI_RELATION_PREDICTOR.register("PrototypeEmbeddingNetwork")
 class PrototypeEmbeddingNetwork(nn.Module):
@@ -273,12 +273,12 @@ class PrototypeEmbeddingNetwork(nn.Module):
         self.idx_to_label = list(data['idx_to_label'].values())
         self.valid_predicate = list(data['idx_to_predicate'].values())
         self.valid_predicate = [str(predicate) for predicate in self.valid_predicate]
-        self.tokenizer = LxmertTokenizer.from_pretrained("/home/yj/zgw/lxmert-base-uncased")
+        self.tokenizer = BertTokenizer.from_pretrained("bert-base-uncased")
         self.valid_predicate_idx = self.tokenizer.convert_tokens_to_ids(self.valid_predicate)
 
-        self.Lxmermodel = LxmertForPreTraining.from_pretrained("/home/yj/zgw/lxmert-base-uncased")
+        # self.Lxmermodel removed - using GlobalPromptUNITER instead
         self.W_lxmert = MLP(768, self.mlp_dim // 2, self.mlp_dim, 2)
-        self.Lx = GlobalPromptLxmert()
+        self.Lx = GlobalPromptUNITER()
 
         self.W_sub2 = MLP(768, self.mlp_dim // 2, self.mlp_dim, 2)
         self.W_obj2 = MLP(768, self.mlp_dim // 2, self.mlp_dim, 2)
@@ -353,7 +353,7 @@ class PrototypeEmbeddingNetwork(nn.Module):
             sub_obj_word_idx = self.find_label(proposal.get_field("labels"),rel_pair_idx)
             sub_word = [self.idx_to_label[i] for i in sub_obj_word_idx[:,0].tolist()]
             obj_word = [self.idx_to_label[i] for i in sub_obj_word_idx[:,1].tolist()]
-            prompts = [f"{sub} [MASK] {obj}" for sub, obj in zip(sub_word, obj_word)]
+            prompts = [f"{sub} {self.tokenizer.mask_token} {obj}" for sub, obj in zip(sub_word, obj_word)]
 
             visual_feat_sub = sub_rep[rel_pair_idx[:, 0]]
             visual_feat_obj = obj_rep[rel_pair_idx[:, 1]]
