@@ -33,7 +33,7 @@ from .BalancedMoERouter import RobustMoERouter, UniformMoERouter3_,UniformMoERou
 
 from transformers import BertTokenizer
 import json
-from .PromptUNITER import GlobalPromptUNITER
+from .PromptLxMertDoRA import GlobalPromptLxmertDoRA
 
 @registry.ROI_RELATION_PREDICTOR.register("PrototypeEmbeddingNetwork")
 class PrototypeEmbeddingNetwork(nn.Module):
@@ -278,7 +278,7 @@ class PrototypeEmbeddingNetwork(nn.Module):
 
         # self.Lxmermodel removed - using GlobalPromptUNITER instead
         self.W_lxmert = MLP(768, self.mlp_dim // 2, self.mlp_dim, 2)
-        self.Lx = GlobalPromptUNITER()
+        self.Lx = GlobalPromptLxmertDoRA()
 
         self.W_sub2 = MLP(768, self.mlp_dim // 2, self.mlp_dim, 2)
         self.W_obj2 = MLP(768, self.mlp_dim // 2, self.mlp_dim, 2)
