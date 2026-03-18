@@ -1,0 +1,23 @@
+# ninja log v5
+3	22537	1740142733048150302	/home/yj/zgw/het/build/temp.linux-x86_64-cpython-38/home/yj/zgw/het/hetsgg/csrc/cuda/deform_pool_cuda.o	d4f03fea022c6317
+2	23368	1740142733876157431	/home/yj/zgw/het/build/temp.linux-x86_64-cpython-38/home/yj/zgw/het/hetsgg/csrc/cuda/SigmoidFocalLoss_cuda.o	a923a541583d6888
+4	23657	1740142734168159945	/home/yj/zgw/het/build/temp.linux-x86_64-cpython-38/home/yj/zgw/het/hetsgg/csrc/cuda/deform_pool_kernel_cuda.o	5bff96b0cc0c01da
+3	23835	1740142734340161425	/home/yj/zgw/het/build/temp.linux-x86_64-cpython-38/home/yj/zgw/het/hetsgg/csrc/cuda/deform_conv_kernel_cuda.o	161d06da1d16e7d
+2	23947	1740142734460162459	/home/yj/zgw/het/build/temp.linux-x86_64-cpython-38/home/yj/zgw/het/hetsgg/csrc/cuda/ROIPool_cuda.o	5ec9cf6302102313
+3	24198	1740142734704164560	/home/yj/zgw/het/build/temp.linux-x86_64-cpython-38/home/yj/zgw/het/hetsgg/csrc/cuda/deform_conv_cuda.o	d58f1ebc3b5b182c
+1	24251	1740142734760165041	/home/yj/zgw/het/build/temp.linux-x86_64-cpython-38/home/yj/zgw/het/hetsgg/csrc/cuda/ROIAlign_cuda.o	4658e3d38076d9b8
+4	24456	1740142734964166798	/home/yj/zgw/het/build/temp.linux-x86_64-cpython-38/home/yj/zgw/het/hetsgg/csrc/cuda/nms.o	d1586962ab55777e
+1	31620	1740142742100228233	/home/yj/zgw/het/build/temp.linux-x86_64-cpython-38/home/yj/zgw/het/hetsgg/csrc/cpu/nms_cpu.o	bb709df449cfb59e
+1	31797	1740142742276229748	/home/yj/zgw/het/build/temp.linux-x86_64-cpython-38/home/yj/zgw/het/hetsgg/csrc/cpu/ROIAlign_cpu.o	60316209076ab09d
+4	35735	1740142746216263666	/home/yj/zgw/het/build/temp.linux-x86_64-cpython-38/home/yj/zgw/het/hetsgg/csrc/vision.o	1113419744778f2c
+29	22505	1740142769712465916	/home/yj/zgw/het/build/temp.linux-x86_64-cpython-38/home/yj/zgw/het/hetsgg/csrc/cuda/deform_pool_cuda.o	de05155ce4c28495
+29	23294	1740142770504472734	/home/yj/zgw/het/build/temp.linux-x86_64-cpython-38/home/yj/zgw/het/hetsgg/csrc/cuda/deform_conv_cuda.o	a521b57c90ec0083
+30	23432	1740142770640473904	/home/yj/zgw/het/build/temp.linux-x86_64-cpython-38/home/yj/zgw/het/hetsgg/csrc/cuda/deform_pool_kernel_cuda.o	e526864ef24c8b8b
+28	23698	1740142770904476176	/home/yj/zgw/het/build/temp.linux-x86_64-cpython-38/home/yj/zgw/het/hetsgg/csrc/cuda/ROIAlign_cuda.o	72deab2b05152d85
+30	23721	1740142770928476383	/home/yj/zgw/het/build/temp.linux-x86_64-cpython-38/home/yj/zgw/het/hetsgg/csrc/cuda/nms.o	47295c16d0914665
+28	23976	1740142771184478587	/home/yj/zgw/het/build/temp.linux-x86_64-cpython-38/home/yj/zgw/het/hetsgg/csrc/cuda/ROIPool_cuda.o	dd48cb6183c6a31b
+28	24188	1740142771396480411	/home/yj/zgw/het/build/temp.linux-x86_64-cpython-38/home/yj/zgw/het/hetsgg/csrc/cuda/SigmoidFocalLoss_cuda.o	6391b14b309084b8
+29	24490	1740142771696482993	/home/yj/zgw/het/build/temp.linux-x86_64-cpython-38/home/yj/zgw/het/hetsgg/csrc/cuda/deform_conv_kernel_cuda.o	da384f586316b44f
+27	31404	1740142778580542242	/home/yj/zgw/het/build/temp.linux-x86_64-cpython-38/home/yj/zgw/het/hetsgg/csrc/cpu/nms_cpu.o	4bfe5d7fd48db2d8
+27	32464	1740142779644551400	/home/yj/zgw/het/build/temp.linux-x86_64-cpython-38/home/yj/zgw/het/hetsgg/csrc/cpu/ROIAlign_cpu.o	9b14eaebcf6ce5ab
+30	34404	1740142781572567994	/home/yj/zgw/het/build/temp.linux-x86_64-cpython-38/home/yj/zgw/het/hetsgg/csrc/vision.o	8896f49b0ec3ef98
